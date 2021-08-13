@@ -1,0 +1,43 @@
+name: Sync Library
+
+on:
+  schedule:
+    # Run every day at mignight
+    - cron:  '0 0 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Terraform Init
+        id: init
+        run: terraform init
+
+      - name: Sync
+        id: sync
+        run: terraform state rm spotify_library.library && terraform import spotify_library.library library
+        env:
+          TF_VAR_api_key: ${{ secrets.API_KEY }}
+          TF_VAR_token_id: ${{ secrets.TOKEN_ID }}
+
+      - name: Terraform Format
+        id: fmt
+        run: terraform fmt
+
+      - name: Save
+        id: save
+        run: terraform state show spotify_library.library | sed -Ee 's/\x1B\[[0-1]m//g' | sed '3d' > library.tf
+
+      - name: Push
+        uses: actions-x/commit@v2
+        with:
+          name: Conrad Ludgate
+          email: conradludgate@gmail.com
+          branch: main
+          files: library.tf terraform.tfstate
