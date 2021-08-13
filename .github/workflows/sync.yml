@@ -28,13 +28,13 @@ jobs:
           TF_VAR_api_key: ${{ secrets.API_KEY }}
           TF_VAR_token_id: ${{ secrets.TOKEN_ID }}
 
+      - name: Save
+        id: save
+        run: terraform state show spotify_library.library | sed -Ee 's/\x1B\[[0-1]m//g' | sed '1d' | sed '3d' | sed '/^::/d' > library.tf
+
       - name: Terraform Format
         id: fmt
         run: terraform fmt
-
-      - name: Save
-        id: save
-        run: terraform state show spotify_library.library | sed -Ee 's/\x1B\[[0-1]m//g' | sed '3d' > library.tf
 
       - name: Push
         uses: actions-x/commit@v2
