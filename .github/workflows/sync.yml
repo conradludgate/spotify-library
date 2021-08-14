@@ -23,14 +23,18 @@ jobs:
 
       - name: Sync
         id: sync
-        run: terraform state rm spotify_library.library && terraform import spotify_library.library library
+        run: |
+          terraform state rm spotify_library.library && terraform import spotify_library.library library
+          terraform state rm spotify_library_albums.albums && terraform import spotify_library_albums.albums library
         env:
           TF_VAR_api_key: ${{ secrets.API_KEY }}
           TF_VAR_token_id: ${{ secrets.TOKEN_ID }}
 
       - name: Save
         id: save
-        run: terraform state show spotify_library.library | sed -Ee 's/\x1B\[[0-1]m//g' | sed '1d' | sed '3d' | sed '/^::/d' > library.tf
+        run: |
+          terraform state show spotify_library.library | sed -Ee 's/\x1B\[[0-1]m//g' | sed '/^    id/d' | sed '1d' | sed '/^::/d' > library.tf
+          terraform state show spotify_library_albums.albums | sed -Ee 's/\x1B\[[0-1]m//g' | sed '/^    id/d' | sed '1d' | sed '/^::/d' > album.tf
 
       - name: Terraform Format
         id: fmt
@@ -42,4 +46,4 @@ jobs:
           name: Conrad Ludgate
           email: conradludgate@gmail.com
           branch: main
-          files: library.tf terraform.tfstate
+          files: library.tf albums.tf terraform.tfstate
