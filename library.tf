@@ -2212,6 +2212,7 @@ resource "spotify_library" "library" {
     "6Euw3gJ1lhOdIAMuBD0frf",
     "6F77qerV7M4oAq6Zyu5orS",
     "6FDYzyjteGpimiBnO06ikI",
+    "6FGayqvQemkqpDhHmoJawA",
     "6FaMZg9su8POFJ9gTCQUvy",
     "6GHSSSBQBjxUXSS6UnKPvZ",
     "6GJXXCxNChjGjWS7rZ7PX6",
