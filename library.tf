@@ -1792,6 +1792,7 @@ resource "spotify_library" "library" {
     "55Rsp1BwhuO6R8EwyiiwVE",
     "55lHf30LjZf6s9WExmYgkd",
     "565RYMspUwQTrUChwqpuII",
+    "56B2ovP8zyuypgNbDUNQ1a",
     "56jiVRc0PFbezqcj1Bg63t",
     "56kawDB5rskqYVfPKOyiuq",
     "56l61HlnJm3UDUh8XZNFLy",
