@@ -789,7 +789,6 @@ resource "spotify_library" "library" {
     "2BJpC2ae0V03K4tktMKbsN",
     "2BLBslKusMAS70QBK0k4Ee",
     "2BWIX5F0aPgZaEKX0pqxG4",
-    "2BY7yfM6eYPUYtUaXNbdVV",
     "2BsVMhKsCp7nuPJpdDaHVM",
     "2ByKpLuzVB1qmeBRaiTyk3",
     "2C4MsZEXyVM2qfSReR8CoP",
