@@ -317,7 +317,6 @@ resource "spotify_library" "library" {
     "0xCz5PStcorm3uHYGOb7gv",
     "0xGefLIJMvEW7GkFp7KHnl",
     "0xMk5VeQZqAX2NSsIfUsmo",
-    "0xUINQmP2to5XnUP3gx0mR",
     "0xoCyCfPwoRZcaMi7oXzjP",
     "0xuVGTEKp9LmqdZT3JkEwp",
     "0yHvGDYWns43XQNVhUwGcG",
