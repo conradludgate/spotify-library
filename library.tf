@@ -560,6 +560,7 @@ resource "spotify_library" "library" {
     "1a1AFgzpfh01R3S6a3DhTc",
     "1aJ82bCWvYKB2espCysFgH",
     "1aTufp89NnAN0cyMWdLxFQ",
+    "1aayZc3JciIs2GhZcSlCrw",
     "1alNxDQy3wrMwJOzSw2qjE",
     "1ax4iDskzlJgsD8bEBLo1p",
     "1b0YdMX8EUf2Zg6VA5tz8Z",
