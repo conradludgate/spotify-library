@@ -14,7 +14,6 @@ resource "spotify_library" "library" {
     "01nCsCEPKboKZ4Achopptp",
     "01vfeDXQvhd9UrvPNQnxqy",
     "01wF8pNBnPvDuKEkjdwzcx",
-    "0240T0gP9w6xEgIciBrfVF",
     "0252Bfhd9l6mzsx0aD4UVD",
     "02CacLpXYTrMAiWYHcGvze",
     "02dERQknHehlysI2XCIfBV",
