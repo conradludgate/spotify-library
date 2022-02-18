@@ -1346,6 +1346,7 @@ resource "spotify_library" "library" {
     "3fWxSeAW98RlJGSnvwDt9M",
     "3fXYerplmPpw8EVno9iIiS",
     "3fifIvoXVoY0l51vAcQAHw",
+    "3flQv4DNGg31Ic4vBv45Tj",
     "3fmZhbUaoUBbYFkcTSmvPf",
     "3fmtqtmaGcv7okj85tVeGu",
     "3gCF6JWBIyUxkKSA5GjCPR",
