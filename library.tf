@@ -455,6 +455,7 @@ resource "spotify_library" "library" {
     "1JVfWCE8HcyCbOEt5kEFc6",
     "1K41B03dCuvTGnUf9UJCdO",
     "1KCbBCoJkIwJUf5Wvsw7JG",
+    "1KUlGcqkfUjnoTL20bhtPr",
     "1KZZezZg99LVBcfgjTfhFg",
     "1KdEqgbQtzGffswF29Jc5U",
     "1Kid8YA7qudS7D7jyptXCc",
