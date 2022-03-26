@@ -498,6 +498,7 @@ resource "spotify_library" "library" {
     "1P97c8tbbNPZKe7NzVRlc6",
     "1POuYNnRJAULhDwJyzKvGn",
     "1PTjaDpCg7gZb37vfTJgOV",
+    "1PlMbi0Qkrlp9yVFM8JEXp",
     "1Q697cUcKq3h78Ux9IlwtI",
     "1QDj4fRaGLSpQPniEhqaOI",
     "1QV63e30Zc8RTa6xWELol3",
